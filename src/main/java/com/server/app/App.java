@@ -36,6 +36,8 @@ public class App {
     	input.close();
     	devices.forEach((k,v) -> v.interrupt());
     	devices.clear();
+    	//ttotal number of read messages
+    	System.out.println("Total Messages Read = " + s.getTotal());
     	server.close();
     }
     
